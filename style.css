@@ -31,6 +31,7 @@ body {
 }
 
 
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -44,7 +45,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
-.navbar ul {
+.navbar ul li {
     display: flex;
     gap: 20px;
     list-style-type: none;
@@ -66,8 +67,8 @@ body {
     flex-direction: column;
     background-color: #f8f8f8;
     width: 100%;
-    margin:0;
-    padding:130px 10px;
+    margin: 0;
+    padding: 130px 10px;
 }
 
 .profile-photo {
@@ -79,7 +80,7 @@ body {
     overflow: hidden;
     border-radius: 50%;
     /* if circular */
-    margin:30px 10px; 
+    margin: 30px 10px;
 }
 
 .profile-photo img {
@@ -94,26 +95,26 @@ body {
     transform: scale(1.20)
 }
 
-.introduction{
-    font-size:22px;
-    font-weight:500px;
-    margin:40px 40px;
-    width:900px;
+.introduction {
+    font-size: 22px;
+    font-weight: 500px;
+    margin: 40px 40px;
+    width: 900px;
     /* line-height: 30px;
     letter-spacing: 1.5px; */
 }
 
-.social-media{
-    width:500px;
+.social-media {
+    width: 500px;
     display: flex;
     justify-content: center;
 }
 
-.social-media a{
-    color:rgba(84, 134, 95, 0.9);
+.social-media a {
+    color: rgba(84, 134, 95, 0.9);
     font-size: 24px;
     font-weight: bold;
-    margin:10px 22px;
+    margin: 10px 22px;
 }
 
 .projects {
@@ -124,16 +125,15 @@ body {
     flex-direction: column;
     background-color: white;
     width: 100%;
-    margin:0;
-    padding:70px 10px;
-
-}
-.soft-projects{
+    margin: 0;
+    padding: 70px 10px;
 
 }
 
-.soft-projects h2{
-    padding:70px 0;
+.soft-projects {}
+
+.soft-projects h2 {
+    padding: 70px 0;
     font-weight: normal;
     text-decoration: underline;
     /* margin: auto; */
@@ -141,29 +141,31 @@ body {
 }
 
 
-.card-1{
+.card-1 {
     background-color: #f9f9f9;
-    padding: 28px 15px; ;
+    padding: 28px 15px;
+    ;
     align-items: center;
     font-weight: normal;
-    width:250px;
-    height:auto;
+    width: 250px;
+    height: auto;
     /* border: 1px solid black; */
     border-radius: 9px;
 
 }
 
-.projects-container{
+.projects-container {
     display: flex;
     /* border:1px solid red; */
-    gap:30px;
-    padding:40px 0; 
+    gap: 30px;
+    padding: 40px 0;
 }
 
-.cover{
+.cover {
     text-align: center;
 }
-.cover img{
+
+.cover img {
     width: 100%;
     height: 170px;
     object-fit: cover;
@@ -179,7 +181,7 @@ body {
 
 .card-1:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -192,12 +194,13 @@ html {
 .navbar nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 20px;
 }
 
 .navbar nav ul li a {
     text-decoration: none;
-    color: inherit; /* Uses the same color as your li */
+    color: inherit;
+    /* Uses the same color as your li */
     cursor: pointer;
     font-weight: bold;
 }
@@ -212,24 +215,28 @@ html {
     top: 0;
     width: 100%;
     z-index: 1000;
+    /* margin:0 19px; */
+
 }
 
-.navbar span{
-    cursor:pointer;
-    
+.navbar span {
+    cursor: pointer;
+
 }
 
-nav{
-    padding:0 30px; 
+nav {
+    padding: 0 30px;
 }
 
 /* Add padding to sections so content isn't hidden behind fixed navbar */
 section {
-    scroll-margin-top: 80px; /* Adjust based on your navbar height */
-    padding-top: 100px; /* Adjust as needed */
+    scroll-margin-top: 80px;
+    /* Adjust based on your navbar height */
+    padding-top: 100px;
+    /* Adjust as needed */
 }
 
-.skills{
+.skills {
     margin: 30px 0;
     display: flex;
     justify-content: center;
@@ -237,15 +244,15 @@ section {
     flex-direction: column;
     background-color: #f8f8f8;
     width: 100%;
-    margin:0;
-    padding:130px 10px;
+    margin: 0;
+    padding: 130px 10px;
 }
 
-.skills-container{
+.skills-container {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding:30px 0; 
+    padding: 30px 0;
 }
 
 .skills-container i {
@@ -255,12 +262,12 @@ section {
     cursor: pointer;
 }
 
-.skills-container i:hover{
+.skills-container i:hover {
     color: rgba(158, 207, 168, 0.9);
     transform: scale(1.2);
 }
 
-.leave-message{
+.leave-message {
     margin: 30px 0;
     display: flex;
     justify-content: center;
@@ -268,26 +275,122 @@ section {
     flex-direction: column;
     /* background-color: #f8f8f8; */
     width: 100%;
-    margin:0;
-    padding:120px 10px;
-    height:400px;
+    margin: 0;
+    padding: 120px 10px;
+    height: 400px;
 }
 
-.leave-message-cont{
+.leave-message-cont {
     font-size: 24px;
     font-weight: 500;
     color: rgba(100, 100, 100, 0.8);
     margin-top: 20px;
-    
+
 }
 
-footer{
+footer {
     background-color: gray;
-    padding:26px 20px;
+    padding: 26px 20px;
     display: flex;
     justify-content: center;
 }
 
+/* Doing Responsivness  */
+
+@media (max-width: 800px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin: 2px;
+        /* padding:10px; */
+    }
+
+    .navbar span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        width: 75%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .about {
+        font-size: 34px;
+
+    }
+
+    .introduction p {
+        width: 50%;
+        margin: auto;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:600px) {
+    .navbar span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        width: 75%;
+        margin: 0px -60;
+        padding: 0 20;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 -30px;
+        padding: 0;
+    }
+}
 
 
+@media (max-width:500px) {
+    .navbar span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        width: 75%;
+        margin: 0px -50px;
+        padding: 0 20;
+    }
 
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 -50px;
+        padding: 0;
+    }
+
+    .about {
+        font-size: 34px;
+        padding:0 10px;
+    }
+
+    .introduction p {
+        width: 39%;
+        margin: auto;
+        font-size: 18px;
+        padding : 0 15px;
+    }
+}
