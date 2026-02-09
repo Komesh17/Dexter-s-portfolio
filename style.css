@@ -33,7 +33,10 @@ body {
 
 
 .navbar {
+    width:100vw;
+    margin:20px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 34px;
     font-weight: bold;
@@ -295,12 +298,14 @@ footer {
     justify-content: center;
 }
 
-/* Doing Responsivness  */
+/* Doing responsiveness   */
 
 @media (max-width: 800px) {
     .navbar {
+        width:100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         margin: 2px;
         /* padding:10px; */
     }
