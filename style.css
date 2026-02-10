@@ -27,7 +27,6 @@ body {
 * {
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -60,6 +59,13 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+.intro span {
+    font-weight: bold;
+    font-size: 48px;
 }
 
 .intro {
@@ -296,6 +302,7 @@ footer {
     padding: 26px 20px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 
@@ -304,8 +311,8 @@ footer {
 @media (max-width: 700px) {
     .navbar {
         background-color: red;
-        position: relative;
-        padding: 0 20px;
+        position: fixed;
+        padding: 15px 20px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -323,27 +330,60 @@ footer {
         justify-content: center;
         align-items: center;
         /* width: 100%; */
-        flex-wrap: wrap;
     }
 
-    .introduction{
-        width:auto;
-        padding:0 20px;
-    }
-
-    .projects-container{
-        width:auto;
+    .introduction {
+        width: auto;
         padding: 0 20px;
-        display:flex;
-        flex-direction:column;
+    }
+
+    .intro span {
+        /* width:auto; */
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .projects-container {
+        width: auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .card-1{
+    .card-1 {
         width: auto;
 
     }
 
+    .navbar ul li {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    
+
+    
+
 }
 
+@media (max-width: 400px) {
+
+    .intro span {
+        /* width:auto; */
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .introduction {
+        font-size: 18px;
+        font-weight: normal;
+    /* color: pink; */
+    }
+
+}
